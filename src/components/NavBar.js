@@ -6,10 +6,11 @@ import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartWidget from './CartWidget';
+import './navBar.css';
 
 function NavBar() {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="dark" expand="lg">
             <Container fluid>
                 <Navbar.Brand href="#"><img src={logo} className="App-logo" alt="logo" /> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />

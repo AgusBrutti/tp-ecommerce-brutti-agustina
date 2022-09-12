@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.h3Boton {
+    font-family: 'Press Start 2P';
+    text-decoration: underline;
+    margin-left: 40px;
+    margin-top: 60px;
+    font-size: 15px;
+    color: rgb(22, 230, 43);
+}
+
+.h1Contador{
+    margin-left: 8%;
+    color: rgb(22, 230, 43);
+}
+.btn-contador{
+    font-family: 'Press Start 2P';
+    font-size: 15px;
+    margin-left: 58px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border-radius: 12px;
+}
+
+.btn-agregar{
+    font-family: 'Press Start 2P';
+    font-size: 15px;
+    margin-left: 40px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border-radius: 12px;
+    display: block;
+    margin-top: 20px;
+}
+
+.text-cantidad{
+    font-family: 'Press Start 2P';
+    font-size: 10px;
+    margin-left: 50px;
+    text-align: left;
+    margin-top: 20px;
+    color: rgb(22, 230, 43);
+}

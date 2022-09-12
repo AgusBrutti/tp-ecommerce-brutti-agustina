@@ -1,0 +1,16 @@
+/*DIV dentro de ItemList*/
+#contenedor-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+.tp6{
+    font-size: 20px;
+    text-decoration: underline;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    color: #fff;
+}
