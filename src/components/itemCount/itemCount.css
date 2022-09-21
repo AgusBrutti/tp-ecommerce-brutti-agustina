@@ -9,13 +9,11 @@
 }
 
 .h1Contador{
-    margin-left: 8%;
     color: rgb(22, 230, 43);
 }
 .btn-contador{
     font-family: 'Press Start 2P';
     font-size: 15px;
-    margin-left: 58px;
     text-align: center;
     background-color: green;
     color: white;
@@ -24,8 +22,7 @@
 
 .btn-agregar{
     font-family: 'Press Start 2P';
-    font-size: 15px;
-    margin-left: 40px;
+    font-size: 12px;
     text-align: center;
     background-color: green;
     color: white;
@@ -36,9 +33,18 @@
 
 .text-cantidad{
     font-family: 'Press Start 2P';
-    font-size: 10px;
-    margin-left: 50px;
-    text-align: left;
+    font-size: 12px!important;
+    text-align: center;
     margin-top: 20px;
     color: rgb(22, 230, 43);
+}
+
+.containerCont{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    margin-top: 14px;
 }

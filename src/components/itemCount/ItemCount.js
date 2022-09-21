@@ -64,10 +64,11 @@ const Boton = ({stock, initial, onAdd}) => {
 
     return(
         <>
-        <h3 className='h3Boton'>Contador tp clase 5</h3>
-        <h1 className='h1Contador'>{contador}</h1>
+        <div className='containerCont'>
         <button className='btn-contador' onClick={sumar}> + </button>
+        <h1 className='h1Contador'>{contador}</h1>
         <button className='btn-contador' onClick={restar}> - </button>
+        </div>
         <button className='btn-contador' onClick={reset}> reset </button>
         <button className='btn-agregar' onClick={agregar}> Agregar al carrito </button>
         <p className='text-cantidad'>Tenes agregado {cantidad} unidades</p>

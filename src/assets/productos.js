@@ -1,6 +1,6 @@
 export const productos = [
-    {id: 0, name: "Juego de mesa", price: 2000, stock:20, categoria:"Juego de mesa", image: 'memorie-cards-zombie.jpg'},
-    {id: 1, name: "Juego de cartas", price: 1000, stock:10, categoria:"Cartas", image: 'ultra_zombies_juego-de-cartas.jpg'},
-    {id: 2, name: "Juego de mesa", price: 3500, stock:5, categoria:"Juego de mesa", image: 'ROMPECABEZAS-ZOMBIES.png'},
-    {id: 3, name: "Juego de cartas", price: 2100, stock:20, categoria:"Cartas", image: 'zombie-playing-cards-naipes.jpg'}
+    {id: 0, name: "Memory Card Zombie", price: 2000, stock:20, categoria:"Juego de mesa", image: 'memorie-cards-zombie.jpg', descripcion: "Memo Test Personalizado. Incluye: 10 fichas y caja incluida. -Medida de las fichas: 6cm x 6cm y 2.5mm de espesor."},
+    {id: 1, name: "Cartas UltraZombies Panini", price: 1000, stock:10, categoria:"Cartas", image: 'ultra_zombies_juego-de-cartas.jpg', descripcion: "Contiene: 1 mazo inicial (primeras 25 cartas). También se encuentran 20 sobres en nuestra tienda oficial."},
+    {id: 2, name: "Rompecabezas Zombie", price: 3500, stock:5, categoria:"Juego de mesa", image: 'ROMPECABEZAS-ZOMBIES.png', descripcion: "Puzzle x 4 inkdrop zombies. Edad mínima recomendada 3 años a 12. Material: Cartón."},
+    {id: 3, name: "Naipes Poker Zombie", price: 2100, stock:20, categoria:"Cartas", image: 'zombie-playing-cards-naipes.jpg', descripcion: "Naipes Bicycle Zombie Terror Magia Poker Baraja Cartas Coleccionables. es un mazo único de naipes, tanto un mazo tradicional como un conjunto de consejos de supervivencia deliciosamente espeluznante en caso de ataques de zombis. Contiene: Baraja Bicycle Zombie "}
 ]

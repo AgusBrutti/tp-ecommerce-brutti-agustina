@@ -1,8 +1,9 @@
 import { useState, useEffect   } from 'react'
 import {productos} from '../assets/productos.js'
 import {promiseFetch} from '../components/promiseFetch.js'
-import {ItemList} from '../components/ItemList'
+import {ItemList} from '../components/itemList/ItemList'
 import RingLoader from "react-spinners/RingLoader";
+// import ItemDetailContainter from '../components/itemDetailContainer/ItemDetailContainer.js';
 
 function ItemListContainer({greeting}) {
 
@@ -27,6 +28,7 @@ function ItemListContainer({greeting}) {
         <RingLoader color="#ec0007"size={100}  cssOverride={{margin: '50px auto 0px auto'}} speedMultiplier={0.5}/> 
         : 
         <ItemList listProduct={listProduct}/> }
+
         </>
         )
     }
