@@ -2,6 +2,7 @@ import './itemDetail.css';
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/dist/sweetalert2.min.css'
 import ItemCount from '../../components/itemCount/ItemCount';
+import { Link } from 'react-router-dom';
 
 const ItemDetail = ({ item }) => {
     const messageFuncion = (count) => {
@@ -16,6 +17,7 @@ const ItemDetail = ({ item }) => {
         <>
         {item ? 
             <div className='contenedorItemDetail'>
+                <Link to={`/categoria/juegos-de-mesa`}><h3 className='btn-volver'>VOLVER</h3></Link>
                 <h4 className='itemDetailName'>{item.name}</h4>
                 <div className='contenedorItemDetail2'>
                 <img className='imagenItemDetail' src={require(`../../../public/images/${item.image}`)} />

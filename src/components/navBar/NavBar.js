@@ -7,24 +7,21 @@ import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartWidget from '../cartWidget/CartWidget';
 import './navBar.css';
+import { Link } from "react-router-dom";
 
 function NavBar() {
+
     return (
         <Navbar bg="dark" expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#"><img src={logo} className="App-logo" alt="logo" /> </Navbar.Brand>
+                <Navbar.Brand><img src={logo} className="App-logo" alt="logo" /> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
-                    <Nav
-                        className="me-auto my-2 my-lg-0"
-                        style={{ maxHeight: '100px' }}
-                        navbarScroll
-                    >
-                    <Nav.Link href="#action1">Home</Nav.Link>
-                    <Nav.Link href="#action2">Juegos de mesa</Nav.Link>
-                    <Nav.Link href="#action3">Cartas</Nav.Link>
+                    <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
+                    <Nav><Link className='linksTo' to="/">Home</Link></Nav>
+                    <Nav><Link className='linksTo' to="/categoria/juegos-de-mesa">Juegos de Zombies</Link></Nav>
                     </Nav>
-                    <CartWidget/>
+                    <Link to="/carrito"><CartWidget/></Link>
                     <Form className="d-flex">
                         <Form.Control
                             type="search"
