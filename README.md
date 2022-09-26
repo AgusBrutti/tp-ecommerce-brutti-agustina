@@ -1,15 +1,22 @@
-# Cambios realizados para le Primera entrega del proyecto final:
+# Cambios realizados para la Primera entrega del proyecto final:
+
 -Se realizó la configuración del routing usando el BrowserRouter en App.js
+####
 -Se configuraron las rutas del Nabvar para que navegue entre:
     .Home 
     .Categoria Juegos de mesa
     .Cart (Logo del carrito.)
+####
 -Para llegar al detalle de cada Producto se configuró la ruta dentro del botón de "Ver detalles"
  en Item.js, también se agregó un botón para volver atrás a la lista de productos cuando se está
  dentro de detalles de un producto.
+####
 -Se agregó la página Home y la página del carrito (que no está finalizada).
+####
 -Comparto link con el archivo del video y lo subo en comentarios en la entrega del tp.
 
+####
+####
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
