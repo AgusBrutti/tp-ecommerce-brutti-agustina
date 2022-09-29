@@ -71,7 +71,6 @@ const Boton = ({stock, initial, onAdd}) => {
         </div>
         <button className='btn-contador' onClick={reset}> reset </button>
         <button className='btn-agregar' onClick={agregar}> Agregar al carrito </button>
-        <p className='text-cantidad'>Tenes agregado {cantidad} unidades</p>
         <ToastContainer />
         </>
     )

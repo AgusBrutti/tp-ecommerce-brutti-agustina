@@ -71,3 +71,15 @@ h4.grid-item {
 .btn-volver:hover{
     text-decoration: underline;
 }
+
+.btn-finalizar{
+    font-family: 'Press Start 2P';
+    font-size: 16px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border-radius: 12px;
+    display: block;
+    width: 400px;
+    height: 70px;
+}
