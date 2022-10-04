@@ -8,9 +8,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CartWidget from '../cartWidget/CartWidget';
 import './navBar.css';
 import { Link } from "react-router-dom";
+import { useContext } from 'react';
+import {CartContext} from '../../context/CartContext.js'
 
 function NavBar() {
 
+        const {cart} = useContext(CartContext);
     return (
         <Navbar bg="dark" expand="lg">
             <Container fluid>
@@ -21,7 +24,7 @@ function NavBar() {
                     <Nav><Link className='linksTo' to="/">Home</Link></Nav>
                     <Nav><Link className='linksTo' to="/categoria/juegos-de-mesa">Juegos de Zombies</Link></Nav>
                     </Nav>
-                    <Link to="/carrito"><CartWidget/></Link>
+                    <Link to="/carrito" className='liksToCart'><CartWidget/></Link>
                     <Form className="d-flex">
                         <Form.Control
                             type="search"

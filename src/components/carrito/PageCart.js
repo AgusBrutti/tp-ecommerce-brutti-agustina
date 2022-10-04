@@ -1,28 +1,28 @@
-// import './item.css';
-import Swal from 'sweetalert2/dist/sweetalert2.js'
-import 'sweetalert2/dist/sweetalert2.min.css'
-import ItemCount from '../../components/itemCount/ItemCount';
+import './pageCart.css';
 import { Link } from 'react-router-dom';
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
-const Cart = ({ product }) => {
-    const messageFuncion = (count) => {
-        Swal.fire({
-            text: `Agregaste ${count} productos al carrito.`,
-            icon: 'success',
-            confirmButtonText: 'Ok'
-        });
-    }
+const Cart = () => {
+    const {cart, removeItem, clear}= useContext(CartContext);
     return (
         <>
-            <div>Aun estoy armando la pagina</div>
-            {/* <div className='contenedorItem'>
-                <h4>{product.name}</h4>
-                <img className='imagenItem' src={require(`../../../public/images/${product.image}`)} />
-                <p className='price'>${product.price}</p>
-                <Link to={`/detalles/${product.id}`}><button className='btn-item'>Ver detalle</button> </Link>
-                <ItemCount stock={product.stock} initial={1} onAdd={messageFuncion} />
-            </div> */}
-
+            <h1 className="titleCart">Productos en carrito</h1>
+            {/* Consulto si hay productos en el carrito */}
+            {cart.length > 0 ? <button className='btnCart2' onClick={()=>clear()}>Quitar todos</button> : <h1 className='h1Cart'>Aún no tenés nada en el carrito! Podes empezar a comprar <Link to={`/categoria/juegos-de-mesa`}>aquí!</Link></h1>}
+            {/* Armo la lista de productos que se agregaron. */}
+            {cart ? cart.map(({item}) => 
+            <>
+            <div className='containterCart'>
+            <h1 key={item.id}>{item.name}</h1>
+            <p>${item.price}</p>
+            <p>{item.contador}</p>
+            <button className='btnCart' onClick={()=>removeItem(item)}>Quitar</button>
+            </div>
+            </>
+            )
+            :
+            "Vacío"}
         </>
     )
 }

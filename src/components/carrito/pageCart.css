@@ -1,0 +1,49 @@
+.titleCart, .h1Cart{
+    font-family: 'Press Start 2P';
+    text-align: center;
+    color:rgb(22, 230, 43);
+    border-bottom: 4px solid;
+    width: 32%;
+    margin: 0px auto;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.containterCart{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btnCart, .btnCart2{
+    font-family: 'Press Start 2P';
+    font-size: 15px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border-radius: 12px;
+}
+
+.containterCart > h1, .containterCart > p{
+    font-size: 20px;
+    color: #ffff;
+}
+
+.h1Cart{
+    color:rgb(246, 248, 246)!important;
+    width: 50%!important;
+    font-size: 25px!important;
+    margin-top: 50px!important;
+    border-bottom: none;
+}
+
+.h1Cart a{
+    color: rgb(242, 19, 19);
+}
+
+.btnCart2{
+    margin: 0px auto 0px 88%;
+}

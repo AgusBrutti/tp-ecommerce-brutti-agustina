@@ -1,25 +1,25 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './itemDetail.css';
 // import Swal from 'sweetalert2/dist/sweetalert2.js';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import ItemCount from '../../components/itemCount/ItemCount';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext';
 
 const ItemDetail = ({ item }) => {
 
     const [finalizarCompra, setFinalizarCompra] = useState(false);
-
+    const {cart,addItem} = useContext(CartContext);
     const onAdd = (count) => {
-        
+            addItem(item,count);
             setFinalizarCompra(true);
-            
             console.log('Agregaste ' + count);
     //     Swal.fire({
     //         text: `Agregaste ${count} productos al carrito.`,
     //         icon: 'success',
     //         confirmButtonText: 'Ok'
     //     });
-    }
+    };
 
     return (
         <>

@@ -7,3 +7,8 @@
 .linksTo:hover{
     color:green;
 }
+
+.liksToCart{
+    text-decoration: none;
+    color: #fff;
+}

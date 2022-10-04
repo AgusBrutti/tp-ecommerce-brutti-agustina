@@ -6,12 +6,14 @@ import ItemDetailContainter from './components/itemDetailContainer/ItemDetailCon
 import PageCart from './components/carrito/PageCart';
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
+import CartProvider from './context/CartContext';
 
 function App() {
   const titulo = "Los mejores juegos de Zombies!"
 
   return <>
     <BrowserRouter>
+    <CartProvider>
       <NavBar />
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -19,6 +21,7 @@ function App() {
         <Route path='/detalles/producto-:id' element={<ItemDetailContainter />}/>
         <Route path='/carrito' element={<PageCart />}/>
       </Routes>
+      </CartProvider>
     </BrowserRouter>
   </>;
 }
