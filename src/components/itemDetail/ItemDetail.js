@@ -13,7 +13,7 @@ const ItemDetail = ({ item }) => {
     const onAdd = (count) => {
             addItem(item,count);
             setFinalizarCompra(true);
-            console.log('Agregaste ' + count);
+            // console.log('Agregaste ' + count);
     //     Swal.fire({
     //         text: `Agregaste ${count} productos al carrito.`,
     //         icon: 'success',
@@ -34,7 +34,7 @@ const ItemDetail = ({ item }) => {
                 <h4 className='grid-item'>Descripcion del producto:</h4>
                 <p className='itemDetailDescription grid-item'>{item.descripcion}</p>
                     {
-                        finalizarCompra ? <Link to='/carrito'> <button className='btn-finalizar'> Finalizar compra  </button></Link>
+                        finalizarCompra ? <Link to='/carrito'> <button className='btn-finalizar'> Ir al carrito </button></Link>
                         :
                         <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
                     }

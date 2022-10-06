@@ -6,11 +6,12 @@ import './cartWidget.css'
 
 function CartWidget() {
     const {cart} = useContext(CartContext);
+    const productosEnCart = cart.reduce((acc,item)=>acc + item.quantity, 0);
     return (
         <>
             <ShoppingCartOutlinedIcon color="success" fontSize="large"/> 
-            {cart.length > 0 ? <span className='cartBadge'>{cart.length}</span> : ""}
-            {/* </ShoppingCartOutlinedIcon> */}
+            {/* {cart.length > 0 ? <span className='cartBadge'>{cart.length}</span> : ""} */}
+            {productosEnCart !== 0 ? <span className='cartBadge'>{productosEnCart}</span>: ""}
         </>
 
 
