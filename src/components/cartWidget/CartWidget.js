@@ -10,7 +10,6 @@ function CartWidget() {
     return (
         <>
             <ShoppingCartOutlinedIcon color="success" fontSize="large"/> 
-            {/* {cart.length > 0 ? <span className='cartBadge'>{cart.length}</span> : ""} */}
             {productosEnCart !== 0 ? <span className='cartBadge'>{productosEnCart}</span>: ""}
         </>
 

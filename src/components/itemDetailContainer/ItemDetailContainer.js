@@ -1,37 +1,32 @@
 import React, { useState, useEffect   } from 'react';
 import {useParams} from 'react-router-dom';
-import {productos} from '../../assets/productos.js';
 import ItemDetail from '../itemDetail/ItemDetail.js';
 import RingLoader from "react-spinners/RingLoader";
-import {promiseFetch} from '../../components/promiseFetch.js';
+import {db} from '../../firebase/firebase'
+import {getDoc, collection, doc} from 'firebase/firestore';
 
 const ItemDetailContainter = () => {
 
     const [product, setProduct] = useState({});
     const [loading, setLoading] = useState (true);
+    const [error, setError] = useState(false);
 
     const {id} = useParams();
 
     useEffect (()=> {
-        const getItem = async () =>{ 
-            try{
-                setLoading(true)
-                let res = await promiseFetch(productos)
-                if (id){
-                    setProduct(res[parseInt(id)]);
-                }else{
-                    setProduct(res);
-                }
-            }
-            catch(err){
-                console.error("No se encontraron productos.", err);
-            }
-            finally{
-                setLoading(false);
-            }
-        }
-        getItem();
-
+            const productsCollection =collection(db, 'productos');
+            const refDoc = doc(productsCollection, id)
+            getDoc(refDoc)
+            .then((result)=>{
+                setProduct({
+                    id:result,
+                    ...result.data()
+                })
+            })
+            .catch((e)=>{setError(true);})
+            .finally(()=>{
+                setLoading(false)
+            })
     },[id])
 
     return (

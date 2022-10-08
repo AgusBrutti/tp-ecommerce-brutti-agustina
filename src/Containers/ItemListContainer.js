@@ -1,24 +1,32 @@
-import { useState, useEffect   } from 'react'
-import {productos} from '../assets/productos.js'
-import {promiseFetch} from '../components/promiseFetch.js'
-import {ItemList} from '../components/itemList/ItemList'
+import { useState, useEffect   } from 'react';
+import {ItemList} from '../components/itemList/ItemList';
 import RingLoader from "react-spinners/RingLoader";
-// import ItemDetailContainter from '../components/itemDetailContainer/ItemDetailContainer.js';
+import {db} from './../firebase/firebase';
+import {getDocs, collection} from 'firebase/firestore';
 
 function ItemListContainer({greeting}) {
 
     const [listProduct, setListProducts] = useState([]);
     const [loading, setLoading] = useState (true);
+    const [error, setError] = useState(false);
 
     useEffect (()=> {
-        setLoading(true)
-        promiseFetch(productos)
-        .then(res=> {
-            setLoading(false)
-            setListProducts(res)
-        })
-        // .catch(err => console.log(err))
-
+            //Primero llamo a la coleccion q necesito
+            const productsCollection = collection(db, 'productos');
+            getDocs (productsCollection)
+            .then((data)=>{
+                const lista = data.docs.map ((product)=>{
+                    return {
+                        ...product.data(),
+                        id: product.id
+                    }
+                })
+                setListProducts(lista);
+            })
+            .catch((e)=>{setError(true);})
+            .finally(()=>{
+                setLoading(false)
+            })
     },[])
 
     return (
