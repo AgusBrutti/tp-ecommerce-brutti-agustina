@@ -1,16 +1,8 @@
 import './item.css';
-import Swal from 'sweetalert2/dist/sweetalert2.js'
-import 'sweetalert2/dist/sweetalert2.min.css'
 import { Link } from 'react-router-dom';
 
 const Item = ({ product }) => {
-    const messageFuncion = (count) => {
-        Swal.fire({
-            text: `Agregaste ${count} productos al carrito.`,
-            icon: 'success',
-            confirmButtonText: 'Ok'
-        });
-    }
+
     return (
         <>
             <div className='contenedorItem'>

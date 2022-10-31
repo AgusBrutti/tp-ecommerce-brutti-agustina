@@ -80,13 +80,17 @@
     margin-top: 30px;
     margin-left: 30px;
 }
-.linkinPark{
+.btn-volver-atras, .linkToCart{
     text-decoration: none;
 }
+.linkToCart{
+    color: #ffff;
+}
+
 .btn-volver2:hover{
     text-decoration: underline;
 } 
-.btn-finalizar-cart{
+.btn-finalizar-cart, .btn-finalizar{
     font-family: 'Press Start 2P';
     font-size: 16px;
     text-align: center;

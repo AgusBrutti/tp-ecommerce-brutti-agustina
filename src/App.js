@@ -7,6 +7,7 @@ import PageCart from './components/carrito/PageCart';
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import CartProvider from './context/CartContext';
+import Formulario from "./components/formulario/Formulario";
 
 function App() {
   const titulo = "Los mejores juegos de Zombies!"
@@ -20,6 +21,7 @@ function App() {
         <Route path='/categoria/juegos-de-mesa' element={<ItemListContainer greeting={titulo} />}/>
         <Route path='/detalles/producto-:id' element={<ItemDetailContainter />}/>
         <Route path='/carrito' element={<PageCart />}/>
+        <Route path='/formularioDeCompra' element={<Formulario/>}/>
       </Routes>
       </CartProvider>
     </BrowserRouter>

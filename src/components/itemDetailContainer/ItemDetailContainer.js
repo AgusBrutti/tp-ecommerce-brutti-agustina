@@ -19,7 +19,7 @@ const ItemDetailContainter = () => {
             getDoc(refDoc)
             .then((result)=>{
                 setProduct({
-                    id:result,
+                    id: result.id,
                     ...result.data()
                 })
             })

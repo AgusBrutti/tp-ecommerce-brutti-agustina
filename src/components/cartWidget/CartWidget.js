@@ -1,4 +1,3 @@
-// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';

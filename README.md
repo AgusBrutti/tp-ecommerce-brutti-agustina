@@ -1,27 +1,29 @@
-# Cambios realizados para la Primera entrega del proyecto final:
+# Proyecto de ecommerce - React JS
 
--Se realizó la configuración del routing usando el BrowserRouter en App.js
-####
--Se configuraron las rutas del Nabvar para que navegue entre:
+Es un E-commerce de un proyecto del curso de React armado desde 0.
+
+![Logo](https://firebasestorage.googleapis.com/v0/b/zombificate-abrutti.appspot.com/o/logo-zombificate.png?alt=media&token=1dc08b0f-d648-4f7d-96ec-15a5f034f48f)
+
+### Cambios realizados para la entrega del proyecto final:
+
+ - Se realizó la configuración del routing usando el BrowserRouter en App.js
+
+- Se configuraron las rutas del Nabvar para que navegue entre:
     .Home 
     .Categoria Juegos de mesa
-    .Cart (Logo del carrito.)
-####
--Para llegar al detalle de cada Producto se configuró la ruta dentro del botón de "Ver detalles"
- en Item.js, también se agregó un botón para volver atrás a la lista de productos cuando se está
- dentro de detalles de un producto.
-####
--Se agregó la página Home y la página del carrito (que no está finalizada).
-####
--Comparto link con el archivo del video y lo subo en comentarios en la entrega del tp.
+    .Cart (Logo del carrito, que redirige al carrito de los productos seleccionados)
 
-####
-####
-# Getting Started with Create React App
+- Para llegar al detalle de cada Producto se configuró la ruta dentro del botón de "Ver detalles" en Item.js, también se agregó un botón para volver atrás a la lista de productos cuando se está
+dentro de detalles de un producto.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Se agregó la página Home y la página del carrito.
 
-## Available Scripts
+- Se realiza un formulario para que se complete antes de finalizar la
+compra.
+
+- Se genera cartel existoso y se recibe los datos del ID de compra del cliente.
+
+#### Available Scripts
 
 In the project directory, you can run:
 
@@ -33,11 +35,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -48,42 +45,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Authors
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [@AgustinaBrutti](https://github.com/AgusBrutti)

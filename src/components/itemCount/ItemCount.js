@@ -3,7 +3,6 @@ import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/dist/sweetalert2.min.css'
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import { dark } from '@mui/material/styles/createPalette';
 import './itemCount.css'
 
 const Boton = ({stock, initial, onAdd}) => {
